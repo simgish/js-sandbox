@@ -10,15 +10,18 @@
  * classes
  */
 
- var addClass = function addClass(el, className) {
- 	if (!hasClass(el, className)) {
- 		el.className += ' ' + className;
- 	}
- }
-
 var hasClass = function hasClass(el, className) {
 	return new RegExp(' ' + className + '').test(' ' + elem.className + ' ');
 }
+
+var addClass = function addClass(el, className) {
+ 	el.classList.add(className);
+}
+
+var toggleClass = function removeClass(el, className) {
+	el.classList.toggle(className);
+}
+
 
 /*
  * selectors
