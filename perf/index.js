@@ -27,7 +27,11 @@ var toggleClass = function removeClass(el, className) {
  * selectors
  */
 
- [].forEach.call(document.querySelector('a'), function(el) {
+var sel = function sel(el) {
+	return document.querySelector(el);
+}
+
+[].forEach.call(document.querySelector('a'), function(el) {
  	el.addEventListener('click', function() {
  		doStuff();
  	})
