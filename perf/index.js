@@ -10,6 +10,12 @@
  * classes
  */
 
+ var addClass = function addClass(el, className) {
+ 	if (!hasClass(el, className)) {
+ 		el.className += ' ' + className;
+ 	}
+ }
+
 var hasClass = function hasClass(el, className) {
 	return new RegExp(' ' + className + '').test(' ' + elem.className + ' ');
 }
