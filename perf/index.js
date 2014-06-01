@@ -7,6 +7,14 @@
  })
 
 /*
+ * classes
+ */
+
+var hasClass = function hasClass(el, className) {
+	return new RegExp(' ' + className + '').test(' ' + elem.className + ' ');
+}
+
+/*
  * selectors
  */
 
