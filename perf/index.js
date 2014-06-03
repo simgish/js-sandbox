@@ -18,7 +18,7 @@ var addClass = function addClass(el, className) {
  	el.classList.add(className);
 }
 
-var toggleClass = function removeClass(el, className) {
+var toggleClass = function toggleClass(el, className) {
 	el.classList.toggle(className);
 }
 
