@@ -2,9 +2,11 @@
  * bootstrap
  */
 
+var ready = function ready() {
  document.addEventListener('DOMContentLoaded', function() {
  	doStuff();
- })
+ });
+}
 
 /*
  * classes
@@ -26,7 +28,7 @@ var sel = function sel(el) {
 	return document.querySelector(el);
 }
 
-[].forEach.call(document.querySelector('a'), function(el) {
+[].forEach.call(document.querySelector(el), function(f) {
  	el.addEventListener('click', function() {
  		doStuff();
  	})
