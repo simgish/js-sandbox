@@ -2,11 +2,9 @@
  * bootstrap
  */
 
-var ready = function ready() {
  document.addEventListener('DOMContentLoaded', function() {
  	doStuff();
- });
-}
+ })
 
 /*
  * classes
