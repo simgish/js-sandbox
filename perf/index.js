@@ -16,10 +16,6 @@ var hasClass = function hasClass(el, className) {
 	return new RegExp(' ' + className + '').test(' ' + elem.className + ' ');
 }
 
-var addClass = function addClass(el, className) {
- 	el.classList.add(className);
-}
-
 /*
  * selectors
  */
